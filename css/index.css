@@ -2,6 +2,32 @@
 html, body{
     font-family: 'Work Sans', sans-serif;
 }
+.heading h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff4f81;
+    letter-spacing: 0.5px;
+}
+.heading p{
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    font-size: 17px;
+    color: black;
+}
+.heading p::after{
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    margin: 20px auto;
+}
+.heading--white p{
+    color: white;
+}
+.section{
+    padding: 5rem 0;
+}
 /* HEADER */
 .header_top{
     background-color: #ff4f81;
@@ -13,6 +39,13 @@ html, body{
 }
 .header_left a:hover{
     color: black !important;
+}
+.navbar-toggler{
+    background-color: black;
+    opacity: 0.6;
+}
+.navbar-toggler:hover{
+    background-color: #ff4f81;
 }
 .header_right a{
     width: 30px;
@@ -116,6 +149,93 @@ html, body{
 .carousel-caption button:hover{
     background-color: #ff4f81;
     border-color: #ff4f81;
-
 }
-
+/* WELCOME */
+.welcome_content p{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.8em;
+    color: #999;
+    padding: 1rem 0 5rem;
+    letter-spacing: 1px;
+}
+.welcome_item i{
+font-size: 2rem;
+}
+.welcome_item h3{
+    color: #ff4f81;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.welcome_item h4{
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    margin: 1rem 0 0.2rem;
+}
+.welcome_item p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: #999;
+    line-height: 1.8em;
+    margin: 10px 0;
+}
+.welcome_item{
+    padding: 2rem;
+}
+/* OURSTART */
+.ourStats{
+    background-image: url(../img/banner2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.ourStat_content{
+    text-align: center;
+    color: white;
+}
+.ourStat_item i{
+    font-size: 2.5rem;
+}
+.ourStat_item h3{
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin: 30px 0 20px;
+    color: #ff4f81;
+}
+.ourStat_item p{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+/* OFFER */
+.off_col{
+    padding: 15px;
+}
+.offer_item{
+    padding: 25px 40px;
+    box-shadow: 0px 1px 8px 0 rgba(158, 158, 158, 0.75);
+    text-align: center;
+    background-color: white;
+    transition: all 0.5s;
+}
+.offer_item:hover{
+    background-color: aqua;
+}
+.offer_item i{
+    color: #ff4f81;
+    font-size: 40px;
+}
+.offer_item h3{
+    font-size: 20px;
+    color: black;
+    margin: 25px 0 20px;
+}
+.offer_item p{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #6b6b6b;
+}
