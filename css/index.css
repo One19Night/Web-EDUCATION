@@ -239,3 +239,204 @@ font-size: 2rem;
     letter-spacing: 0.5px;
     color: #6b6b6b;
 }
+/* FEEDBACK */
+.feedback{
+    background-image: url("../img/banner3.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.feedback_content{
+    box-shadow: 0px 1px 7px #8e8e8e;
+    background-color: rgba(0, 0, 0, 0.47);
+    padding: 1rem;
+}
+.item{
+    color: white;
+    padding: 1rem;
+}
+.feedback_top{
+    background-color: rgba(0, 0, 0, 0.47);
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    position: relative;
+}
+.feedback_top::after{
+    content: "";
+    border-top: 9px solid rgba(0, 0, 0, 0.47);
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 25%;
+}
+.feedback_content .item .feedback_bottom img{
+    width: 28%;
+    display: inline-block;
+}
+.feedback_bottom{
+    display: flex;
+    justify-content: center;
+    width: 55%;
+    margin:2rem auto 0;
+}
+.feedback_name p{
+    margin: 0;
+    margin-left: 5px;
+}
+.feedback_name p:first-child{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.feedback_bottom p:last-child{
+    color: #ff4f81;
+}
+.feedback .owl-theme .owl-dots .owl-dot span {
+    background-color: #ff4f81;
+    opacity: 0.5;
+}
+.feedback .owl-theme .owl-dots .owl-dot:hover span, 
+.feedback .owl-theme .owl-dots .owl-dot.active span{
+    opacity: 1;
+}
+.feedback .owl-theme .owl-dots .owl-dot:focus{
+    outline: none;
+}
+/* NEW */
+.news_content img{
+    border: 2px solid #dedede;
+}
+.news_content h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.news_content a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+}
+.news_content a:hover{
+    color: #ff4f81;
+}
+.news_content h4{
+    font-size: 1rem;
+    color: #ff4f81;
+    letter-spacing: 1px;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+.news_content p {
+    color: #999;
+    margin-top: 1rem;
+    line-height: 1.8rem;
+    font-size: 0.9rem;
+}
+.news_content .row:last-child{
+    margin-top: 5rem;
+}
+/* FOOTER */
+footer{
+    background-color: #141415;
+}
+.footer_top h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4f81;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;    
+}
+.footer_top p{
+    color: #8b8b96;
+    font-size: 15px;
+    line-height: 2em;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+.footer_link, .footer_contact{
+    margin-bottom: 1rem;
+}
+.footer_link i{
+    color: #ff4f81;
+    margin-right: 1rem;
+}
+.footer_link a, .footer_contact a{
+    color: #8b8b96;
+    font-size: 15px;
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+}
+.footer_link a:hover, .footer_contact a:hover{
+    color: white;
+}
+.footer_contact i{
+    width: 32px;
+    height: 32px;
+    border: 1px solid #4b4b50;
+    color: white;
+    text-align: center;
+    line-height: 32px;
+    margin-right: 1rem;
+}
+.footer_form{
+    margin-top: 3rem;
+}
+.footer_form label{
+    color: #ff4f81;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.footer_form input{
+    padding: 14px;
+    border: none;
+    border-radius: 0%;
+    color: #888;
+    letter-spacing: 1px;
+    height: auto;
+}
+.footer_form button{
+    border-radius: 0%;
+    background-color: #ff4f81;
+    padding: 12px 35px;
+    letter-spacing: 1px;
+    outline: none;
+    color: white;
+    transition: all 0.5s;
+}
+.footer_form button:hover{
+    background-color: #ec1955;
+    color: black;
+}
+.footer_bottom{
+    background-color: #0f0f10;
+    text-align: center;
+    padding: 0.5rem 0;
+    letter-spacing: 1px;
+    color: white;
+}
+.footer_bottom a{
+    text-decoration: none;
+    color: #ff4f81;
+    transition: all 0.5s;
+}
+.footer_bottom a:hover{
+    color: white;
+}
+/* MODAL */
+#Modalintruction h5{
+    font-size: 29px;
+    color: #ff4f81;
+    font-weight: bold;
+}
+#Modalintruction p{
+    font-size: 14px;
+    color: #777;
+    line-height: 1.8em;
+    padding: 20px 0;
+}
+#Modalintruction .modal-dialog{
+    max-width: 600px;
+}
+
