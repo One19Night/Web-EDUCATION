@@ -40,12 +40,12 @@ html, body{
 .header_left a:hover{
     color: black !important;
 }
-.navbar-toggler{
-    background-color: black;
-    opacity: 0.6;
-}
-.navbar-toggler:hover{
+.navAll .navbar-toggler{
     background-color: #ff4f81;
+    border-radius: 0%;
+}
+.navAll.navbar-toggler:focus{
+    outline: none;
 }
 .header_right a{
     width: 30px;
@@ -131,7 +131,7 @@ html, body{
 }
 .carousel-caption p{
     letter-spacing: 4px;
-    line-height: 1.8rem;
+    line-height: 1.8em;
     width: 70%;
     margin: 0 auto;
     margin-bottom: 25px;
@@ -150,6 +150,10 @@ html, body{
     background-color: #ff4f81;
     border-color: #ff4f81;
 }
+.carousel-control-next, .carousel-control-prev {
+    z-index: 11;
+}
+
 /* WELCOME */
 .welcome_content p{
     width: 80%;
@@ -355,6 +359,8 @@ footer{
 }
 .footer_link, .footer_contact{
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
 }
 .footer_link i{
     color: #ff4f81;
@@ -399,7 +405,7 @@ footer{
 .footer_form button{
     border-radius: 0%;
     background-color: #ff4f81;
-    padding: 12px 35px;
+    padding: 12px 20px;
     letter-spacing: 1px;
     outline: none;
     color: white;
@@ -412,7 +418,7 @@ footer{
 .footer_bottom{
     background-color: #0f0f10;
     text-align: center;
-    padding: 0.5rem 0;
+    padding: 0.5rem;
     letter-spacing: 1px;
     color: white;
 }
@@ -423,6 +429,12 @@ footer{
 }
 .footer_bottom a:hover{
     color: white;
+}
+.form-row,.row{
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 /* MODAL */
 #Modalintruction h5{
@@ -439,4 +451,94 @@ footer{
 #Modalintruction .modal-dialog{
     max-width: 600px;
 }
-
+/*------------------ RESPONSIVE ----------------*/
+/* HEADER */
+@media screen and (max-width: 1199.98px) {
+.educationcarousel .carousel-caption{
+    top: 50%;
+}
+.educationcarousel .carousel-caption h1{
+    font-size: 4vw;
+}
+.educationcarousel .carousel-caption p{
+    font-size: 1.6vw;
+}
+.educationcarousel .carousel-caption button{
+    font-size: 1.5vw;
+    padding: 0.8em 1em;
+}
+}
+@media screen and (max-width: 991.98px) {
+    .navAll .navbar-brand p:first-child{
+    font-size: 3vw;
+}
+.navAll .navbar-brand p:last-child{
+    font-size: 1.5vw;
+}
+}
+@media screen and (max-width: 765.98px) {
+   .navAll .navbar-nav{
+       background-color: #eee;
+       text-align: center;
+   } 
+   .navAll .dropdown-menu{
+       background-color: #e0e1e2;
+       border-color: #e0e1e2;
+       text-align: center;
+   }
+   .navAll .dropdown-item{
+    color: black;
+   }
+}
+@media screen and (max-width: 575.98px) {
+ .heading p{
+     padding: 0 15px;
+ }
+    .header_left a{
+     display: block;
+ }  
+ .footer_form .form-control,.footer_form .btn{
+     padding: 10px;
+     font-size: 14px;
+     border: 0;
+ }
+}
+@media screen and (max-width: 415px) {
+    #carouselEducation{
+        height: 250px;
+    }   
+    #carouselEducation .carousel-inner,#carouselEducation .carousel-item, #carouselEducation .carousel-item img{
+        height: 100%;
+    }
+    #carouselEducation .carousel-item img{
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 376px) {
+    .feedback_bottom{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 360px) {
+  .header_right{
+      width: 35%;
+      text-align: center;
+  }  
+  .header_right a{
+      margin-bottom: 5px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width:992px){
+    .navAll .nav-item{
+        margin: 0;
+        padding: 0 2px;
+    }
+    .navAll .nav-link{
+    font-size: 12px;
+}
+}
+@media screen and (min-width: 500px) and (max-width:992px){
+    .feedback_bottom{
+        width: 85%;
+    }
+}
